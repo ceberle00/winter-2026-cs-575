@@ -14,6 +14,14 @@ def test_homework_problem_katz_vs_pagerank() -> None:
         # Example structure students must design
         # 1: {...},
         # ...
+        1 : {2, 3},
+        2 : {1, 3},
+        3 : {2, 7},
+        4 : {2, 1},
+        5 : {8, 1},
+        6 : {2, 1},
+        7 : {6, 5},
+        8 : {4, 7}
     }
     G = adjacency_list_to_digraph(adjacency_list)
 

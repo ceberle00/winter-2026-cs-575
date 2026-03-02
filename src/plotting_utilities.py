@@ -165,3 +165,7 @@ def show_degree_distribution(G: nx.Graph) -> None:
         [float(key) for key in degree_dict.keys()],
         [float(value) for value in degree_dict.values()],
     )
+
+G = nx.barbell_graph(3,2)
+show_graph(G)
+show_degree_distribution(G)

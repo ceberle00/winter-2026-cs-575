@@ -2,6 +2,7 @@ from network_utilities import adjacency_list_to_digraph
 import networkx as nx
 import numpy as np 
 
+
 def test_homework_problem_ev_vs_katz_collapse() -> None:
     """
     Students should design a directed graph with >= 6 nodes such that:
@@ -11,6 +12,12 @@ def test_homework_problem_ev_vs_katz_collapse() -> None:
 
     # Create graph (STUDENT IMPLEMENTS THIS)
     adjacency_list: dict[int, set[int]] = {
+        1 : {2, 3},
+        2 : {1, 3},
+        3 : {2, 1},
+        4 : {2, 1},
+        5 : {2, 1},
+        6 : {2, 1}
         # Example structure students must design
         # 1: {...},
         # ...
