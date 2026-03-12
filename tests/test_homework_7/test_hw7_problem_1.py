@@ -11,7 +11,7 @@ def test_hw7_problem_1() -> None:
     # Build graph
     G: nx.Graph = nx.Graph()
     # TODO: Add vertices
-
+    G.add_node()
     # TODO: Add edges
 
     # TODO: Define partition
